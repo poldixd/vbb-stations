@@ -9,7 +9,25 @@ If you find an error feel free to create a *pull request*.
 ## Todo
 
 - [~~BVG~~](operated-by-bvg.json)
-- S-Bahn
+- [~~S-Bahn Berlin GmbH~~](operated-by-sbahn-berlin-gmbh.json)
+
+### New Stations
+
+#### BVG
+
+| Name                                     |     opens     |
+| ---------------------------------------- | :-----------: |
+| [Museumsinsel](https://de.wikipedia.org/wiki/U-Bahnhof_Museumsinsel) | expected 2019 |
+| [Rotes Rathaus](https://de.wikipedia.org/wiki/U-Bahnhof_Rotes_Rathaus) | expected 2019 |
+| [Unter den Linden](https://de.wikipedia.org/wiki/U-Bahnhof_Unter_den_Linden) | expected 2019 |
+
+#### S-Bahn Berlin GmbH
+
+| Name                                     | opens |
+| ---------------------------------------- | :---: |
+| [Flughafen Berlin-Brandenburg](https://de.wikipedia.org/wiki/Bahnhof_Flughafen_Berlin_Brandenburg) |  😅   |
+| [Perleberger Brücke](https://de.wikipedia.org/wiki/Bahnhof_Berlin_Perleberger_Br%C3%BCcke) |   ?   |
+| [Waßmannsdorf](https://de.wikipedia.org/wiki/Bahnhof_Wa%C3%9Fmannsdorf) |   ?   |
 
 ## Sources
 
