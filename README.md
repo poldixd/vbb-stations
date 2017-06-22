@@ -8,7 +8,7 @@ Here you can find lists of stations in Berlin which are operated by Berliner Ver
 
 In these file are all stations operated by BVG (Berliner Verkehrsbetriebe) or S-Bahn Berlin GmbH.
 
-```JSON
+```
 [
   [
     "900000100003", // 12 digit VBB id
@@ -20,7 +20,7 @@ In these file are all stations operated by BVG (Berliner Verkehrsbetriebe) or S-
 
 The agency's are:
 
-```json
+```
 {
 	id: '796',
 	name: 'Berliner Verkehrsbetriebe',
@@ -41,7 +41,7 @@ The agency's are:
 
 ### [operated-by-bvg.json](operated-by-bvg.json)
 
-```json
+```
 [
   [
     "009023302", // 9 digit VBB id
