@@ -1,19 +1,65 @@
 # vbb-stations
 
-Here you can find a list of stations in Berlin which is operated by BVG or S-Bahn Berlin GmbH. The files are in JSON format.
+Here you can find lists of stations in Berlin which are operated by Berliner Verkehrsbetriebe (BVG) or S-Bahn Berlin GmbH. The files are in JSON format.
 
-In the first column you can find the HAFAS ID, in the second column is the official name of the station and the last column contains a clean version of the name.
+## File Description
 
-If you find an error feel free to create a *pull request*.
+### [all-stations-with-operators.json](all-stations-with-operators.json)
+
+In these file are all stations operated by BVG (Berliner Verkehrsbetriebe) or S-Bahn Berlin GmbH.
+
+```JSON
+[
+  [
+    "900000100003", // 12 digit VBB id
+    "S+U Alexanderplatz Bhf (Berlin)", // name of the station
+    ["1", "796"] // array with id's of the operators (agency_id)
+  ]
+]
+```
+
+The agency's are:
+
+```json
+{
+	id: '796',
+	name: 'Berliner Verkehrsbetriebe',
+	url: 'http://www.bvg.de',
+	timezone: 'Europe/Berlin',
+	language: 'de',
+	phone: null
+},
+{
+	id: '1',
+	name: 'S-Bahn Berlin GmbH',
+	url: 'http://www.s-bahn-berlin.de',
+	timezone: 'Europe/Berlin',
+	language: 'de',
+	phone: null
+}
+```
+
+### [operated-by-bvg.json](operated-by-bvg.json)
+
+```json
+[
+  [
+    "009023302", // 9 digit VBB id
+    "U Adenauerplatz (Berlin)", // name of the station
+    "Adenauerplatz" // clean name of the station
+  ]
+]   
+```
+
+### [operated-by-sbahn-berlin-gmbh.json](operated-by-sbahn-berlin-gmbh.json)
+
+like operated-by-bvg.json
 
 ## Todo
 
-- [~~BVG~~](operated-by-bvg.json)
-- [~~S-Bahn Berlin GmbH~~](operated-by-sbahn-berlin-gmbh.json)
-
 ### New Stations
 
-#### BVG
+#### BVG (Berliner Verkehrsbetriebe)
 
 | Name                                     |     opens     |
 | ---------------------------------------- | :-----------: |
@@ -29,7 +75,12 @@ If you find an error feel free to create a *pull request*.
 | [Perleberger Brücke](https://de.wikipedia.org/wiki/Bahnhof_Berlin_Perleberger_Br%C3%BCcke) |   ?   |
 | [Waßmannsdorf](https://de.wikipedia.org/wiki/Bahnhof_Wa%C3%9Fmannsdorf) |   ?   |
 
+## Errors
+
+If you find an error feel free to create a *pull request*.
+
 ## Sources
 
 - [Wikipedia/Liste der Berliner U-Bahnhöfe](https://de.wikipedia.org/wiki/Liste_der_Berliner_U-Bahnh%C3%B6fe)
 - [Wikipedia/Liste der Stationen der S-Bahn Berlin](https://de.wikipedia.org/wiki/Liste_der_Stationen_der_S-Bahn_Berlin)
+- VBB-Fahrplandaten (GTFS-Format)
